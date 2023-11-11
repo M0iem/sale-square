@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    --font-family-abril: "Abril Fatface", cursive;
+    --font-family-marcellus: "Marcellus", serif;
+    --font-family-poppins: "Poppins", sans-serif;
+  }
+
+
+.activationContainer{
+    position: absolute;
+    overflow-x: hidden;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family-abril);
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+
+}
+.activationContainer p{
+    overflow: hidden;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border:1px solid rgba(245, 245, 245,0.7);
+    flex-shrink:0;
+    width: max(60%,300px);
+    border-radius: 10px;
+    padding: 20px 30px;
+    justify-content: center;
+    color: whitesmoke;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.activationContainer p button{
+    background-color: inherit;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 2px solid #6d026f;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-family: var(--font-family-abril);
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.activationContainer p button a{
+    text-decoration: none;
+    color: inherit;
+}
+.activationContainer p button:hover{
+    background: #6d026f;
+    box-shadow: 0 0 5px #6d026f,
+    0 0 25px #6d026f,
+    0 0 50px #6d026f,
+    0 0 100px #6d026f;
+
+
+}

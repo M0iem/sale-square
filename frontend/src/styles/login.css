@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    --font-family-abril: "Abril Fatface", cursive;
+    --font-family-marcellus: "Marcellus", serif;
+    --font-family-poppins: "Poppins", sans-serif;
+  }
+
+
+.loginContainer{
+        border-radius: 16px;
+        box-shadow: 0 4px 30px #4747470b;
+        backdrop-filter: blur(7.1px);
+        border:1px solid rgba(245, 245, 245,0.7);
+        flex-shrink:0;
+        width: max(60%,300px);
+        border-radius: 10px;
+        padding: 20px 30px;
+}
+.loginContainer h2{
+        font-family: var(--font-family-abril);
+        color: whitesmoke;
+        font-size: 2.2rem;
+     
+}
+.loginContainer form{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+     
+}
+.loginContainer form .group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0;
+        gap: 10px;
+        color: whitesmoke;
+        
+}
+.loginContainer form .group input{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        color: black;
+}
+.check{
+        width: 20px;
+        height: 20px;
+        accent-color: #159AC2;
+        cursor: pointer;
+}
+.checkgroup{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+.fgp{
+        color: #00DBDE;
+        text-decoration: none;
+}
+.loginContainer form .group button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: var(--font-family-poppins);
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        transition: all .5s ease-in-out;
+        
+
+}
+.loginContainer form .group button:hover{
+        background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+transform: scale(.9);
+}
+.loginContainer .more h4{
+   color: whitesmoke;
+   display: flex;
+   gap: 20px;
+   margin: 10px 0;
+   justify-content: center;
+}
+.groupforgot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+        color: whitesmoke;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+}
+.loginContainer .more h4{
+        color: whitesmoke;
+        display: flex;
+        gap: 20px;
+        margin: 10px 0;
+        justify-content: center;
+     }
+.loginContainer .more h4 .link{
+        color: #00DBDE;
+    
+     }

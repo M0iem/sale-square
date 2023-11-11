@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family-abril: "Abril Fatface", cursive;
+  --font-family-marcellus: "Marcellus", serif;
+  --font-family-poppins: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components{
+ 
+  .badge {
+    @apply
+      px-3 py-1 rounded-full text-xs bg-gray-100 
+  }
+  .product-title{
+    @apply
+    font-semibold text-lg overflow-ellipsis  whitespace-nowrap capitalize
+  }
+  .discount-percent{
+    @apply bg-[#149BC2] px-1.5 py-0.5 rounded-md text-xs text-white 
+  }
+  .buttom-primary {
+    @apply  
+    bg-yellow-500/80 hover:bg-yellow-500/90 px-6 py-2 rounded-md text-white font-medium  tracking-wider transition
+  }
+ 
+}
+:root {
+  --font-family-abril: "Abril Fatface", cursive;
+  --font-family-marcellus: "Marcellus", serif;
+  --font-family-poppins: "Poppins", sans-serif;
+}
+.App{
+  max-width: 1900px;
+  margin: auto;
+
+  background-size: contain;
+  font-family: var(--font-family-poppins);
+  
+
+}
+.cart, .wishlist{
+  z-index: 100;
+}
+
+
+.loginPageMain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1000;
+  
+}
+.signupPageMain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1000;
+ 
+}
+
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #e9e0e7;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f3b4e4;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.Banner{
+  background-image: url("./images/bg2.jpg");
+  background-size: cover;
+}
+
+
